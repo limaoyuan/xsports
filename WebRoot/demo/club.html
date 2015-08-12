@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>秀色运动网-XSports.wang</title>
+<script src="/js/jquery_2.0.3.js"></script>
+<script src="/semantic/semantic.js"></script>
+<link rel="stylesheet" type="text/css" href="/semantic/semantic.css">
+<style>
+[data-selector="sizing"] {
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+[data-selector="sizing"] {
+	margin: 0 !important;
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+	<div class="ui item menu">
+		<a class="item" href="clist.html"> <i class="trophy icon"></i> 俱乐部
+		</a> <a class="item" href="clist.html"> <i class="heartbeat icon"></i> 秀色榜
+		</a>
+	</div>
+
+	<div class="ui grid center aligned" data-selector="sizing">
+		<h2 class="ui header">
+			<img src="http://www.semantic-ui.cn/images/avatar2/large/patrick.png"
+				class="ui circular image">
+			<div class="content">
+				周末骑行小分队
+				<div class="sub header">每周都去骑一次，快乐从骑行开始。</div>
+			</div>
+		</h2>
+		<div class="row">
+			<div class="column">
+				<div class="header ui">
+					<div data-rating="5" class="ui massive star rating">
+						喜欢： <i class="icon active"></i> <i class="icon active"></i> <i
+							class="icon active"></i> <i class="icon active"></i> <i
+							class="icon active"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui top attached tabular menu">
+		<a class="item active" data-tab="feed">动态</a><a class="item"
+			data-tab="comment" href="comment.html">评论
+			<div class="ui teal label">22</div>
+		</a>
+		<a class="item"
+			data-tab="member" href="member.html">成员
+			<div class="ui teal label">6</div></a>
+	</div>
+
+	<div data-tab="feed" class="ui bottom attached tab segment active"
+		data-selector="sizing">
+		<div class="ui feed">
+			<div class="event">
+				<div class="label">
+					<img src="http://www.semantic-ui.cn/images/avatar/small/elliot.jpg">
+				</div>
+				<div class="content">
+					<div class="summary">
+						<a class="user"> 李雷 </a> 加入组织。
+						<div class="date">1 小时前</div>
+					</div>
+					<div class="meta">
+						<a class="like"><i class="like icon"></i> 4 喜欢 </a>
+					</div>
+				</div>
+			</div>
+			<div class="event">
+				<div class="label">
+					<img src="http://www.semantic-ui.cn/images/avatar/small/helen.jpg">
+				</div>
+				<div class="content">
+					<div class="summary">
+						<a>韩梅梅</a> 上传 <a> 新上传了2张照片</a>
+						<div class="date">1 天前</div>
+					</div>
+					<div class="extra images">
+						<a><img
+							src="http://www.semantic-ui.cn/images/wireframe/image.png"></a>
+						<a><img
+							src="http://www.semantic-ui.cn/images/wireframe/image.png"></a>
+					</div>
+					<div class="meta">
+						<a class="like"><i class="like icon"></i> 1 喜欢 </a>
+					</div>
+				</div>
+			</div>
+			<div class="event">
+				<div class="label">
+					<img src="http://www.semantic-ui.cn/images/avatar/small/jenny.jpg">
+				</div>
+				<div class="content">
+					<div class="summary">
+						<a class="user"> 群主 </a> 更改介绍
+						<div class="date">2 天前</div>
+					</div>
+					<div class="meta">
+						<a class="like"><i class="like icon"></i> 8 喜欢 </a>
+					</div>
+				</div>
+			</div>
+			<div class="event">
+				<div class="label">
+					<img src="http://www.semantic-ui.cn/images/avatar/small/joe.jpg">
+				</div>
+				<div class="content">
+					<div class="summary">
+						<a>郭德纲</a> 发布状态
+						<div class="date">3 天前</div>
+					</div>
+					<div class="extra text">今天第一次跑了10KM,累死了。</div>
+					<div class="meta">
+						<a class="like"><i class="like icon"></i> 5 喜欢 </a>
+					</div>
+				</div>
+			</div>
+			<div class="event">
+				<div class="label">
+					<img src="http://www.semantic-ui.cn/images/avatar/small/justen.jpg">
+				</div>
+				<div class="content">
+					<div class="summary">
+						<a>于谦</a> 上传 <a>2 张照片</a>
+						<div class="date">4 天前</div>
+					</div>
+					<div class="extra images">
+						<a><img
+							src="http://www.semantic-ui.cn/images/wireframe/image.png"></a>
+						<a><img
+							src="http://www.semantic-ui.cn/images/wireframe/image.png"></a>
+					</div>
+					<div class="meta">
+						<a class="like"><i class="like icon"></i> 41 喜欢 </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		//投票
+		$('.ui.rating').rating({
+			onRate : function(value) {
+				//alert(value);
+			}
+		});
+
+		//标签
+		//$('.menu.item').tab();
+	</script>
+</body>
+</html>

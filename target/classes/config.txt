@@ -1,0 +1,9 @@
+#jdbcUrl=jdbc:mysql://10.10.10.62:21003/scrum?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#user=root
+#password=@WSX#EDC6yhn
+#devMode=true
+
+jdbcUrl = jdbc:mysql://127.0.0.1/xsports?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password =
+devMode = true

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>smantic</title>
+<script src="/js/jquery_2.0.3.js"></script>
+<script src="/semantic/semantic.js"></script>
+<link rel="stylesheet" type="text/css" href="/semantic/semantic.css">
+</head>
+<body>
+	<div class="ui grid">
+		<div class="row">
+			<div class="column">
+				<div class="ui massive star rating" data-rating="5">
+					<i class="icon"></i> <i class="icon"></i> <i class="icon"></i> <i
+						class="icon"></i> <i class="icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.ui.rating').rating({
+			onRate : function(value) {
+				//alert(value);
+			}
+		});
+	</script>
+</body>
+</html>

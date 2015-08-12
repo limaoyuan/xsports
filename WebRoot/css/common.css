@@ -1,0 +1,17 @@
+body{
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+
+tr  {
+	font-size:14px;
+}
+
+.wrap{
+	width: 980px;
+	margin: auto;
+}
+.navbar{
+	border-radius: 0px;
+	padding: 0px 15px;
+}
